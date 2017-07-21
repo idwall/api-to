@@ -10,3 +10,7 @@ log:
 database:
   connection: postgres://postgres:postgres@postgres:5432/postgres
   debug: true
+
+this:
+  is:
+    something: Hi
