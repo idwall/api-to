@@ -1,0 +1,12 @@
+http:
+  host: 0.0.0.0
+  port: 4000
+
+log:
+  name: api
+  level: trace
+  pretty: true
+
+database:
+  connection: postgres://postgres:postgres@postgres:5432/postgres
+  debug: true

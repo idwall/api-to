@@ -1,0 +1,14 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/.idea": true,
+        "**/node_modules": true,
+        "**/*.js": true,
+        "**/*.js.map": true
+    },
+    "tslint.enable": true,
+    "tslint.autoFixOnSave": true
+}

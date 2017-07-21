@@ -1,0 +1,11 @@
+{
+    "exec": "/bin/sh ./scripts/run.sh debug",
+    "stdin": false,
+    "legacyWatch": true,
+    "watch": [
+        "server/"
+    ],
+    "ignore": [
+    ],
+    "ext": "ts yml"
+}

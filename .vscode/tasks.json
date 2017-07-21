@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "Build",
+            "command": "docker-compose down && docker-compose build",
+            "type": "shell"
+        },
+        {
+            "taskName": "Stop",
+            "command": "docker-compose down",
+            "type": "shell"
+        },
+        {
+            "taskName": "Start",
+            "command": "docker-compose up -d && docker-compose logs --tail=300 --follow api",
+            "type": "shell"
+        },
+        {
+            "taskName": "Lint",
+            "command": "docker-compose down && docker-compose build && docker-compose run --entrypoint 'npm run lint' api",
+            "type": "shell"
+        },
+        {
+            "taskName": "Execute",
+            "command": "docker-compose down && docker-compose build && docker-compose up -d && docker-compose logs --tail=300 --follow api",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
