@@ -11,5 +11,4 @@ export class IndexRouter extends Router {
     public async index(request: IRequest, response: IResponse): Promise<string> {
         return "apito";
     }
-
 }
