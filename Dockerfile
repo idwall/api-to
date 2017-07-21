@@ -5,8 +5,9 @@ FROM node:8.2.0-alpine
 MAINTAINER WoLfulus <wolfulus@gmail.com>
 
 # Dependencies
-RUN apk update && apk upgrade && \
-    apk add --no-cache bash gawk sed grep bc coreutils git openssh
+#RUN apk update && \
+#    apk upgrade && \
+#    apk add --no-cache bash gawk sed grep bc coreutils git openssh
 
 # Creates the app directory
 RUN mkdir -p /app
