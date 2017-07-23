@@ -8,11 +8,6 @@ import { IDatabaseService } from "./interface";
 
 import { ConfigServiceId, IConfigService } from "../config/interface";
 
-interface ILogEntry {
-    type: string;
-    args: any;
-}
-
 @injectable()
 export class DatabaseService implements IDatabaseService {
 
