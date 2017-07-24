@@ -76,7 +76,7 @@ function bindServices() {
 /**
  * Bootstrap
  */
-setTimeout(async function bootstrap() {
+setImmediate(async function bootstrap() {
 
     let logger: ILogService = null;
     let config: IConfigService = null;
